@@ -11,7 +11,7 @@ void setup() {
 void loop() {
   int analogValue = analogRead(analogPin);
   analogReadResolution(12);
-  float voltage = (analogValue / 2095.0) * referenceVoltage;
+  float voltage = (analogValue / 4095.0) * referenceVoltage;
 
   Serial.print("Analog Value: ");
   Serial.print(analogValue);
